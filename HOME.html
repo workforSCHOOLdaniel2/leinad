@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 17 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="RUTH.css" rel="stylesheet">
+<link href="HOME.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="util.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script src="wwb17.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $('#ThemeableMenu1 .dropdown-toggle').dropdown({popperConfig:{placement:'bottom-start',modifiers:{computeStyle:{gpuAcceleration:false}}}});
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.show',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   $(window).on('resize', function()
+   {
+      ResponsiveVideo('VideoBackground-video');
+   });
+   ResponsiveVideo('VideoBackground-video');
+});
+</script>
+</head>
+<body>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb17.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:967px;margin: 0;border-width:0;z-index:250" width="16" height="16"></a>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
+<ul id="Breadcrumb1">
+<li><a href="">BABY'S SHOW</a></li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button title="Hamburger Menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="./HOME.html" class="nav-link">HOME</a>
+</li>
+<li class="nav-item">
+<a href="./ABOUT-US.html" class="nav-link">ABOUT-US</a>
+</li>
+<li class="nav-item">
+<a href="./CONTACT-US.html" class="nav-link">CONTACT-US</a>
+</li>
+<li class="nav-item">
+<a href="./GALLERY.html" class="nav-link">GALLERY</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_VideoBackground">
+<div id="VideoBackground-video"><iframe src="https://www.youtube.com/embed/KUgrBTNbSe4?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=KUgrBTNbSe4" frameborder="0" allowfullscreen></iframe></div>
+<div id="VideoBackground-overlay"></div>
+<div id="VideoBackground">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:2;">
+<img src="images/der.jpg" id="Image1" alt="" width="455" height="455">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Heading1" style="display:inline-block;width:100%;z-index:3;">
+<h1 id="Heading1">WELCOME TO BABY'S<br> SHOW </h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Text1" style="position:absolute;left:558px;top:441px;width:412px;height:144px;z-index:7;">
+<span style="color:#DC143C;font-family:Arial;font-size:32px;">COME AND BUY FOR YOUR CHILDREN TOYS AND LET YOUR CHILD ENJOY THE DAY</span></div>
+<div id="wb_Image2" style="position:absolute;left:7px;top:737px;width:455px;height:407px;z-index:8;">
+<img src="images/fat.jpg" id="Image2" alt="" width="455" height="608"></div>
+<div id="wb_Text2" style="position:absolute;left:518px;top:787px;width:478px;height:81px;z-index:9;">
+<span style="color:#800080;font-family:'Palatino Linotype';font-size:20px;"><em>PLEASE DONOT ALLOW YOUR SWEET BABY TO MISS THIIS DAY FULL OF TALENTS, GIFTS AND HAPPINESS</em></span></div>
+</body>
+</html>
